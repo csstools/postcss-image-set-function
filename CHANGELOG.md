@@ -1,5 +1,10 @@
 # Changes to PostCSS image-set() Function
 
+### 4.0.0 (April 26, 2020)
+
+- Updated: `postcss` to 7.0.27 (patch)
+- Updated: `postcss-value-parser` to 3.2.1 (major)
+
 ### 3.0.1 (September 18, 2018)
 
 - Updated: PostCSS Values Parser 2

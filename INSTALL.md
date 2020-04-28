@@ -166,6 +166,6 @@ grunt.initConfig({
 [PostCSS]: https://github.com/postcss/postcss
 [PostCSS CLI]: https://github.com/postcss/postcss-cli
 [PostCSS Loader]: https://github.com/postcss/postcss-loader
-[PostCSS image-set() Function]: https://github.com/jonathantneal/postcss-image-set-function
+[PostCSS image-set() Function]: https://github.com/csstoolspostcss-image-set-function
 [React App Rewire PostCSS]: https://github.com/csstools/react-app-rewire-postcss
 [React App Rewired]: https://github.com/timarney/react-app-rewired

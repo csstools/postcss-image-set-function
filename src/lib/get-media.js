@@ -1,25 +1,25 @@
-import postcss from 'postcss';
+import postcss from 'postcss'
 
-const dpiRatios = { dpcm: 2.54, dpi: 1, dppx: 96, x: 96 };
+const dpiRatios = { dpcm: 2.54, dpi: 1, dppx: 96, x: 96 }
 
 // return a valid @media rule
 export default (node, mediasByDpr) => {
 	if (Object(node).type === 'number' && node.unit in dpiRatios) {
 		// calculate min-device-pixel-ratio and min-resolution
-		const dpi = Number(node.value) * dpiRatios[node.unit.toLowerCase()];
-		const dpr = Math.floor(dpi / dpiRatios.x * 100) / 100;
+		const dpi = Number(node.value) * dpiRatios[node.unit.toLowerCase()]
+		const dpr = Math.floor(dpi / dpiRatios.x * 100) / 100
 
 		if (dpi in mediasByDpr) {
-			return false;
+			return false
 		} else {
 			const media = mediasByDpr[dpi] = postcss.atRule({
 				name: 'media',
 				params: `(-webkit-min-device-pixel-ratio: ${dpr}), (min-resolution: ${dpi}dpi)`
-			});
+			})
 
-			return media;
+			return media
 		}
 	} else {
-		return false;
+		return false
 	}
-};
+}

@@ -33,4 +33,4 @@ module.exports = {
 			message: /unexpected image/
 		}
 	}
-};
+}

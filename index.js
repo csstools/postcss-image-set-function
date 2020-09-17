@@ -17,13 +17,13 @@ export default postcss.plugin('postcss-image-set-function', opts => {
 
 			// if a declaration likely uses an image-set() function
 			if (imageSetValueMatchRegExp.test(value)) {
-				const valueAST = valueParser(value).parse();
+				const valueAST = valueParser.parse(value);
 
 				// process every image-set() function
-				valueAST.walkType('func', node => {
-					if (imageSetFunctionMatchRegExp.test(node.value)) {
+				valueAST.walkFuncs(node => {
+					if (imageSetFunctionMatchRegExp.test(node.name)) {
 						processImageSet(
-							node.nodes.slice(1, -1),
+							node.nodes,
 							decl,
 							{ decl, oninvalid, preserve, result }
 						);

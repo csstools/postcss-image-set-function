@@ -8,21 +8,17 @@
 
 .test-changed-properties {
 	order: 1;
-	background-image: 
-		url(img/test.png);
+	background-image: url(img/test.png);
 	order: 2;
-	background-image: 
-		url(img/test.png);
+	background-image: url(img/test.png);
 	order: 3;
-	background-image: 
-		url(img/test.png);
+	background-image: url(img/test.png);
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
 
 .test-changed-properties {
-	background-image: 
-		url(img/test-2x.png);
+	background-image: url(img/test-2x.png);
 }
 }
 
@@ -32,23 +28,20 @@
 		url(img/test-2x.png) 2x
 	);
 	order: 4;
-	background-image: 
-		url(img/test.png);
+	background-image: url(img/test.png);
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
 
 .test-changed-properties {
-	background-image: 
-		url(img/test-2x.png);
+	background-image: url(img/test-2x.png);
 }
 }
 
 @media (-webkit-min-device-pixel-ratio: 6.25), (min-resolution: 600dpi) {
 
 .test-changed-properties {
-	background-image: 
-		url(my-img-print.png);
+	background-image: url(my-img-print.png);
 }
 }
 
@@ -63,15 +56,13 @@
 
 .test-mixed-units {
 	order: 1;
-	background-image: 
-		url(img/test.png);
+	background-image: url(img/test.png);
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
 
 .test-mixed-units {
-	background-image: 
-		url(img/test-2x.png);
+	background-image: url(img/test-2x.png);
 }
 }
 
@@ -81,15 +72,13 @@
 		url(img/test-2x.png) 2dppx
 	);
 	order: 2;
-	background-image: 
-		url(img/test-2x.png);
+	background-image: url(img/test-2x.png);
 }
 
 @media (-webkit-min-device-pixel-ratio: 1), (min-resolution: 96dpi) {
 
 .test-mixed-units {
-	background-image: 
-		url(img/test.png);
+	background-image: url(img/test.png);
 }
 }
 
@@ -103,23 +92,20 @@
 
 .test-mixed-order {
 	order: 1;
-	background: 
-		url(../images/bck.png);
+	background: url(../images/bck.png);
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
 
 .test-mixed-order {
-	background: 
-		url(../images/bck@2x.png);
+	background: url(../images/bck@2x.png);
 }
 }
 
 @media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi) {
 
 .test-mixed-order {
-	background: 
-		url(../images/bck@3x.png);
+	background: url(../images/bck@3x.png);
 }
 }
 
@@ -130,23 +116,20 @@
 		url(../images/bck@2x.png) 2x
 	);
 	order: 2;
-	background: 
-		url(../images/bck.png);
+	background: url(../images/bck.png);
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
 
 .test-mixed-order {
-	background: 
-		url(../images/bck@2x.png);
+	background: url(../images/bck@2x.png);
 }
 }
 
 @media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi) {
 
 .test-mixed-order {
-	background: 
-		url(../images/bck@3x.png);
+	background: url(../images/bck@3x.png);
 }
 }
 
@@ -161,13 +144,13 @@
 
 .test-no-url {
 	order: 1;
-	background-image: img/test.png;
+	background-image: "img/test.png";
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
 
 .test-no-url {
-	background-image: img/test-2x.png;
+	background-image: "img/test-2x.png";
 }
 }
 
@@ -177,20 +160,20 @@
 		"img/test-2x.png" 2x
 	);
 	order: 2;
-	background-image: img/test.png;
+	background-image: "img/test.png";
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
 
 .test-no-url {
-	background-image: img/test-2x.png;
+	background-image: "img/test-2x.png";
 }
 }
 
 @media (-webkit-min-device-pixel-ratio: 6.25), (min-resolution: 600dpi) {
 
 .test-no-url {
-	background-image: my-img-print.png;
+	background-image: "my-img-print.png";
 }
 }
 
@@ -205,23 +188,20 @@
 
 .test-webkit-prefix {
 	order: 1;
-	background-image: 
-		url(img/test.png);
+	background-image: url(img/test.png);
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
 
 .test-webkit-prefix {
-	background-image: 
-		url(img/test-2x.png);
+	background-image: url(img/test-2x.png);
 }
 }
 
 @media (-webkit-min-device-pixel-ratio: 6.25), (min-resolution: 600dpi) {
 
 .test-webkit-prefix {
-	background-image: 
-		url(my-img-print.png);
+	background-image: url(my-img-print.png);
 }
 }
 
@@ -236,19 +216,16 @@
 
 @media (min-width: 1000px) {
 	.test-within-mq-1 {
-		background-image: 
-			url(img/test.png);
+		background-image: url(img/test.png);
 	}
 	@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
 	.test-within-mq-1 {
-		background-image: 
-			url(img/test-2x.png);
+		background-image: url(img/test-2x.png);
 	}
 	}
 	@media (-webkit-min-device-pixel-ratio: 6.25), (min-resolution: 600dpi) {
 	.test-within-mq-1 {
-		background-image: 
-			url(my-img-print.png);
+		background-image: url(my-img-print.png);
 	}
 	}
 	.test-within-mq-1 {
@@ -262,19 +239,16 @@
 
 @media (min-width: 768px) and (max-width: 1024px) {
 	.test-within-mq-2 {
-		background-image: 
-			url(img/test.png);
+		background-image: url(img/test.png);
 	}
 	@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
 	.test-within-mq-2 {
-		background-image: 
-			url(img/test-2x.png);
+		background-image: url(img/test-2x.png);
 	}
 	}
 	@media (-webkit-min-device-pixel-ratio: 6.25), (min-resolution: 600dpi) {
 	.test-within-mq-2 {
-		background-image: 
-			url(my-img-print.png);
+		background-image: url(my-img-print.png);
 	}
 	}
 	.test-within-mq-2 {
